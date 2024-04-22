@@ -21,14 +21,14 @@ class UserOut(BaseModel):
 class Post(PostBase):
     id: int
     created_at: datetime
-    owner_id : int
-    owner : UserOut
+    # owner_id : int
+    # owner : UserOut
     class Config:
         orm_mode = True
 
 class PostOut(BaseModel):
     Post: Post
-    votes: int
+    # votes: int
     class Config:
         orm_mode = True
 
