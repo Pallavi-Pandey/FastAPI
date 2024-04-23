@@ -5,7 +5,7 @@ from .routers import post, user, auth, vote
 from .config import settings
 
 
-models.Base.metadata.create_all(bind=engine)
+# models.Base.metadata.create_all(bind=en  gine)
 
 app = FastAPI()
 
@@ -18,6 +18,6 @@ app.include_router(auth.router)
 
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World"} 
 
 
